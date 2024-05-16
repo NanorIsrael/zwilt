@@ -58,11 +58,6 @@ header {
   color:black
 }
 
-.gradient-a {
- background-image: linear-gradient(to bottom right, #FFF, #EDEFFF), linear-gradient(45deg, #FFF, #EDEFFF);
- /* Set the background size to cover the entire element */
-}
-
 .mygrad {
   background-color:  #EDEFFF;
   clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
@@ -72,3 +67,9 @@ header {
 .colorme {
   background-color: #202229;
 }
+
+summary::marker {
+  content: "";
+}
+
+

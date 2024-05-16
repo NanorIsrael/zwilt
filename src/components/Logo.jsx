@@ -1,4 +1,4 @@
-function Logo({width, height}) {
+function Logo({ width, height }) {
   return (
     <svg
       width={width}

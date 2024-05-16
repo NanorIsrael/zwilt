@@ -9,12 +9,13 @@ import SearchButton from "./components/section1/SearchButton";
 import MarketParent from "./components/section2/MarketParent";
 import LinesSVG from "./components/section2/LineSVG";
 import Qoute from "./components/section3/QuoteSVG";
+import SliderButtons from "./components/section3/SliderButtons";
+import RenderBulletSVG from "./components/section4/BulletSVG";
 
 function App() {
   return (
     <>
       <Header />
-  
 
       <main className=" text-black h-full w-full flex flex-col my-0 mx-auto justify-center">
         <article className="text-center pt-[9em] pb-[9em]">
@@ -30,8 +31,9 @@ function App() {
             &nbsp;has never been easier.
           </h1>
           <p className="font-[400] text-[0.875rem] md:text-[1.375rem] leading-[32px] pt-[0.188em] md:w-[40.42%] mx-auto text-[#202229]">
-            With our rigorous <span className="truncate">pre-vetting</span> process, you'll never have to worry
-            about finding the ideal candidate ever again.
+            With our rigorous <span className="truncate">pre-vetting</span>{" "}
+            process, you'll never have to worry about finding the ideal
+            candidate ever again.
           </p>
           <label
             htmlFor="search-hero"
@@ -47,7 +49,7 @@ function App() {
               type={"submit"}
               className="bg-[#FFBE2E] rounded-[15px] w-[4.625em] h-full"
             >
-              <SearchButton/>
+              <SearchButton />
             </button>
           </label>
           <section className="bg-[#F8F8F8] flex flex-col justify-center items-center md:w-[63.88%] my-0 mx-auto rounded-[15px]">
@@ -89,125 +91,82 @@ function App() {
         </article>
         <article className="relative w-[100%] bg-[#EDEFFF]">
           <div className="clipper-a"></div>
-          <LinesSVG/>
+          <LinesSVG />
           <section className="w-full z-0  ">
             <h2 className="md:w-[67.847%] text-center font-[700] text-3xl md:text-[3.375rem] leading-[4rem] mt-[2.313em] mx-auto">
               Your one-stop marketplace for finding the talent your business
               needs.
             </h2>
             <div className="flex items-center flex-col mx-[70px]">
-              <MarketParent 
-              description={"Find Dev and IT professionals to scale your business."}
-              image={"/assets/services/design&creative.png"}
-              imageAlt={"design and creative"}
+              <MarketParent
+                description={
+                  "Find Dev and IT professionals to scale your business."
+                }
+                image={"/assets/services/design&creative.png"}
+                imageAlt={"design and creative"}
               />
-              <MarketParent 
-              description={"Explore Creative individuals with a keen eye for detail."}
-              image={"/assets/services/it&development.png"}
-              imageAlt={"design and creative"}
+              <MarketParent
+                description={
+                  "Explore Creative individuals with a keen eye for detail."
+                }
+                image={"/assets/services/it&development.png"}
+                imageAlt={"design and creative"}
               />
             </div>
             <div className="flex mt-[0.865em] mx-[70px]">
               <div className=" flex flex-row items-center justify-start w-full ">
-                <RightArrowSVG/>
-                <span className="pl-2" >Explore More</span>
+                <RightArrowSVG />
+                <span className="pl-2">Explore More</span>
               </div>
               <div className="flex items-center flex-row w-full">
-                <p><strong>30 more </strong>to explore</p>
+                <p>
+                  <strong>30 more </strong>to explore
+                </p>
               </div>
             </div>
-            
-
           </section>
-        </article >
+        </article>
         <article className="relative text-black h-full colorme">
           <div className="mygrad"></div>
-          <Qoute/>
+          <Qoute />
           <div className="flex flex-col mx-[70px] py-[15.438em] lg:flex-row  lg:justify-between">
-          <section className="colorme h-full lg:w-[34%]">
-            <h2 className="lg:text-[3.375rem] text-3xl text-white font-[700]">
-              How it worked for jason &nbsp;
-              <img
-                src={"/assets/json/jason.png"}
-                alt={"jason"}
-                className="rounded-full inline"
-                width={57}
-                height={57}
-              />
-              &nbsp;at&nbsp;
-              <span className="pt-4 px-2 inline-block">
-                <RenderGroove width={"192"} height={"51"} fill={"#AF7CFF"}/>
-              </span>
-            </h2>
-            <p className="text-white py-[2.25em] lg:text-[1.375rem] text-[0.875rem] leading-[32px] opacity-80">
-              Zwilt enabled us to deliver on time and they’ve been heavy hitters
-              in our corner since.
-            </p>
+            <section className="colorme h-full lg:w-[34%]">
+              <h2 className="lg:text-[3.375rem] text-3xl text-white font-[700] leading-[64px]">
+                How it worked for jason &nbsp;
+                <img
+                  src={"/assets/json/jason.png"}
+                  alt={"jason"}
+                  className="rounded-full inline"
+                  width={57}
+                  height={57}
+                />
+                &nbsp;at&nbsp;
+                <span className="pt-4 px-2 inline-block">
+                  <RenderGroove width={"192"} height={"51"} fill={"#AF7CFF"} />
+                </span>
+              </h2>
+              <p className="text-white py-[2.25em] lg:text-[1.375rem] text-[0.875rem] leading-[32px] opacity-80">
+                Zwilt enabled us to deliver on time and they’ve been heavy
+                hitters in our corner since.
+              </p>
 
-            <div className="flex">
-              <span className="">
-                <svg
-                  width="50"
-                  height="50"
-                  viewBox="0 0 50 50"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="49.793"
-                    height="49.793"
-                    rx="20.1863"
-                    transform="matrix(-1 0 0 1 49.793 0)"
-                    fill="white"
-                  />
-                  <path
-                    d="M23.9819 24.5601C23.9819 26.9393 25.9941 28.8681 28.4763 28.8681C30.9585 28.8681 32.9707 26.9393 32.9707 24.5601C32.9707 22.1808 30.9585 20.252 28.4763 20.252C25.9941 20.252 23.9819 22.1808 23.9819 24.5601Z"
-                    fill="#50589F"
-                  />
-                  <path
-                    d="M25.1376 29.6067L25.1376 19.5135L16.1488 24.5601L25.1376 29.6067Z"
-                    fill="#50589F"
-                  />
-                </svg>
-              </span>
-              <span className="px-2">
-                <svg
-                  width="51"
-                  height="50"
-                  viewBox="0 0 51 50"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.792969"
-                    width="49.793"
-                    height="49.793"
-                    rx="20.1863"
-                    fill="white"
-                  />
-                  <path
-                    d="M26.6041 24.5601C26.6041 26.9393 24.5918 28.8681 22.1096 28.8681C19.6275 28.8681 17.6152 26.9393 17.6152 24.5601C17.6152 22.1808 19.6275 20.252 22.1096 20.252C24.5918 20.252 26.6041 22.1808 26.6041 24.5601Z"
-                    fill="#50589F"
-                  />
-                  <path
-                    d="M25.4484 29.6067L25.4484 19.5135L34.4372 24.5601L25.4484 29.6067Z"
-                    fill="#50589F"
-                  />
-                </svg>
-              </span>
-            </div>
-          </section>
-          <section className="pt-[4em] lg:pt-0 lg:w-[50%] self-end pr-32">
-            <figure className="flex items-center ">
-              <div className="flex justify-center items-center bg-[#AF7CFF] w-[99px] h-[99px] rounded-full">
-                <RenderGroove width={"76"} height={"20.87"} fill={"#FFF"}/>
+              <div className="flex">
+                <SliderButtons />
               </div>
-              <figcaption className="flex flex-col justify-center items-start px-[1em] ">
-                <h3 className="text-white lg:text-[1.375rem]">Jason Makki</h3>
-                <p className=" text-[0.875rem] text-gray-600">Engineer at GROOVE</p>
-                <p className="text-[0.875rem] text-gray-600">San Francisco</p>
-              </figcaption>
-            </figure>
+            </section>
+            <section className="pt-[4em] lg:pt-0 lg:w-[50%] self-end pr-32">
+              <figure className="flex items-center ">
+                <div className="flex justify-center items-center bg-[#AF7CFF] w-[99px] h-[99px] rounded-full">
+                  <RenderGroove width={"76"} height={"20.87"} fill={"#FFF"} />
+                </div>
+                <figcaption className="flex flex-col justify-center items-start px-[1em] ">
+                  <h3 className="text-white lg:text-[1.375rem]">Jason Makki</h3>
+                  <p className=" text-[0.875rem] text-gray-600">
+                    Engineer at GROOVE
+                  </p>
+                  <p className="text-[0.875rem] text-gray-600">San Francisco</p>
+                </figcaption>
+              </figure>
 
               <p className="text-white font-[400] pt-[2em] leading-[32px] lg:text-[1.375rem] text-[0.875rem] item-end opacity-80">
                 Zwilt enabled us to deliver on time and they’ve been heavy
@@ -215,25 +174,30 @@ function App() {
                 and they’ve been heavy hitters in our corner since.Zwilt enabled
                 us to deliver on time and they’ve been heavy hitters.
               </p>
-          </section>
+            </section>
           </div>
-          
         </article>
 
-        <article>
-          <section>
-            <h2>How we ensure you’re in good hands.</h2>
-            <p>
+        <article className="relative">
+          <div className="mygrad bg-[#202229]"></div>
+
+          <div className="flex flex-col mx-[70px] py-[15.438em] lg:w-[50%]">
+          <section >
+            <h2 className="lg:text-[3.375rem] text-3xl text-black font-[700] leading-[64px]">How we ensure you’re in good hands.</h2>
+            <p className="font-[400] lg:pt-[2em] leading-[32px] lg:text-[1.375rem] text-[0.875rem]">
               With our comprehensive screening process, we hand-pick highly
               skilled candidates so you can onboard them in a matter of days.
             </p>
           </section>
-          <section>
-            <ScreeningProcess />
-            <ScreeningProcess />
-            <ScreeningProcess />
-            <ScreeningProcess />
+          <section className="py-8">
+            <ScreeningProcess step={1} description={"Resume Screening"}/>
+            <ScreeningProcess step={2} description={"Video Interview"}/>
+            <ScreeningProcess step={3} description={"Technical Evaluation"}/>
+            <ScreeningProcess step={4} description={"Application Review"}/>
+            <ScreeningProcess step={5} description={"Lets get to work"}/>
           </section>
+          </div>
+        
         </article>
 
         <article>

@@ -1,4 +1,4 @@
-function Marketplace({title}) {
+function Marketplace({ title }) {
   return (
     <section className="w-full lg:self-center">
       <p className="w-[67.847%] leading-[34px] font-[#202229] text-[1.2rem] lg:text-[1.5rem] pt-[2.25em]">

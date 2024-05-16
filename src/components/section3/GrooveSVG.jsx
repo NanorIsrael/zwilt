@@ -1,4 +1,4 @@
-function RenderGroove({width, height, fill}) {
+function RenderGroove({ width, height, fill }) {
   return (
     <svg
       width={width}
