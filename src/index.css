@@ -27,25 +27,29 @@ header {
   margin: 0 70px 0 70px;
 }
 
-.clipper-b {
-  content: "";
-  background: #fff;
-  height: 100%;
-  width: 100%;
+.clipper-a {
+  background-color:  #FFF;
+  clip-path: polygon(0% 70%, 100% 0%, 0% 0%);
+  height: 80px
 }
-.clipper-a:after {
+@media screen and (max-width: 800px) {
+  .clipper-a {
+    clip-path: polygon(0% 70%, 100% 0%, 0% 0%);
+    height: 50px
+  }
+}
+/* .clipper-a:after {
   content: "";
   position: absolute;
   top: 17%;
   left: 0;
   height: 50px;
   width: 100%;
-  /* background-color: red; */
   background: linear-gradient(to bottom right,#FFF, hsla(233, 100%, 96%, 0.485));
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   transform: rotate(-3deg);
-}
+} */
 
 
 #search-hero::placeholder {
@@ -57,4 +61,13 @@ header {
 .gradient-a {
  background-image: linear-gradient(to bottom right, #FFF, #EDEFFF), linear-gradient(45deg, #FFF, #EDEFFF);
  /* Set the background size to cover the entire element */
+}
+
+.mygrad {
+  background-color:  #EDEFFF;
+  clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+  height: 100px
+}
+.colorme {
+  background-color: #202229;
 }

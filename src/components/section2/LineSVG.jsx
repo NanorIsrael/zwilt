@@ -1,8 +1,9 @@
 function LinesSVG() {
 	return(
+    // mt-[78px]
 		<svg
             className={
-              "bg-white absolute top-[0] left-0 w-full rotate-[0deg] z-100 mt-[78px]"
+               "absolute top-[-6%] lg:top-[-10%] left-0 w-full z-100"
             }
             width="w-full"
             height="133"

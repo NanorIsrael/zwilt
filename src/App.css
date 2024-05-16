@@ -591,6 +591,58 @@ code {
   top: 1rem;
 }
 
+.top-\[8\] {
+  top: 8;
+}
+
+.top-\[80\] {
+  top: 80;
+}
+
+.top-\[80\%\] {
+  top: 80%;
+}
+
+.top-\[10\%\] {
+  top: 10%;
+}
+
+.top-\[0\%\] {
+  top: 0%;
+}
+
+.top-\[-10\%\] {
+  top: -10%;
+}
+
+.top-\[-5\%\] {
+  top: -5%;
+}
+
+.top-\[-7\%\] {
+  top: -7%;
+}
+
+.top-\[-1\%\] {
+  top: -1%;
+}
+
+.top-\[-2\%\] {
+  top: -2%;
+}
+
+.top-\[-3\%\] {
+  top: -3%;
+}
+
+.top-\[-8\%\] {
+  top: -8%;
+}
+
+.top-\[-6\%\] {
+  top: -6%;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -642,6 +694,14 @@ code {
 
 .mt-\[8\.313em\] {
   margin-top: 8.313em;
+}
+
+.mt-\[0\.865em\] {
+  margin-top: 0.865em;
+}
+
+.mt-\[2\.313em\] {
+  margin-top: 2.313em;
 }
 
 .inline {
@@ -717,6 +777,11 @@ code {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-\[-1deg\] {
+  --tw-rotate: -1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -739,6 +804,10 @@ code {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -829,6 +898,15 @@ code {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#EDEFFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 239 255 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-\[15\%\] {
   --tw-bg-opacity: 15%;
 }
@@ -907,6 +985,11 @@ code {
   padding-bottom: 3.405em;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
 }
@@ -949,6 +1032,22 @@ code {
 
 .pt-\[0\] {
   padding-top: 0;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pb-\[3em\] {
+  padding-bottom: 3em;
+}
+
+.pb-\[9em\] {
+  padding-bottom: 9em;
 }
 
 .text-center {
@@ -1134,6 +1233,18 @@ code {
 }
 
 @media (min-width: 1024px) {
+  .lg\:top-\[-7\%\] {
+    top: -7%;
+  }
+
+  .lg\:top-\[-8\%\] {
+    top: -8%;
+  }
+
+  .lg\:top-\[-10\%\] {
+    top: -10%;
+  }
+
   .lg\:flex {
     display: flex;
   }

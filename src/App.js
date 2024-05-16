@@ -16,7 +16,7 @@ function App() {
   
 
       <main className=" text-black h-full w-full flex flex-col my-0 mx-auto justify-center">
-        <article className="text-center pt-[9em]">
+        <article className="text-center pt-[9em] pb-[9em]">
           <h1 className="text-3xl md:text-[3.375rem] font-[700] leading-[64px] w-full md:w-[47%] bg-white my-0 mx-auto">
             Finding the right fit &nbsp;
             <img
@@ -86,11 +86,11 @@ function App() {
             </div>
           </section>
         </article>
-        <article className="relative w-[100%]">
+        <article className="relative w-[100%] bg-[#EDEFFF]">
+          <div className="clipper-a"></div>
           <LinesSVG/>
-          <div className="w-full h-[40px] clipper-a z-10 bg-white"></div>
-          <section className="w-full z-0 overflow-hidden gradient-a">
-            <h2 className="md:w-[67.847%] text-center font-[700] text-3xl md:text-[3.375rem] leading-[4rem] mt-[8.313em] mx-auto">
+          <section className="w-full z-0  ">
+            <h2 className="md:w-[67.847%] text-center font-[700] text-3xl md:text-[3.375rem] leading-[4rem] mt-[2.313em] mx-auto">
               Your one-stop marketplace for finding the talent your business
               needs.
             </h2>
@@ -106,11 +106,23 @@ function App() {
               imageAlt={"design and creative"}
               />
             </div>
+            <div className="flex mx-[70px] mt-[0.865em]">
+            <div className="flex flex-row items-center justify-start w-full pl-8">
+              <RightArrowSVG/>
+              <span className="px-2" >Explore More</span>
+            </div>
+            <div className="flex flex-row w-full">
+              <p><strong>30 more </strong>to explore</p>
+            </div>
+            </div>
+            
+
           </section>
-        </article>
+        </article >
         {/* py-[80em] */}
-        <article className=" text-black">
-          <section>
+        <article className=" text-black h-full colorme">
+          <div className="mygrad"></div>
+          <section className="colorme h-full">
             <h2>
               how it worked for jason &nbsp;
               <img
