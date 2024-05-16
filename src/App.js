@@ -8,6 +8,7 @@ import "./App.css";
 import SearchButton from "./components/section1/SearchButton";
 import MarketParent from "./components/section2/MarketParent";
 import LinesSVG from "./components/section2/LineSVG";
+import Qoute from "./components/section3/QuoteSVG";
 
 function App() {
   return (
@@ -106,42 +107,45 @@ function App() {
               imageAlt={"design and creative"}
               />
             </div>
-            <div className="flex mx-[70px] mt-[0.865em]">
-            <div className="flex flex-row items-center justify-start w-full pl-8">
-              <RightArrowSVG/>
-              <span className="px-2" >Explore More</span>
-            </div>
-            <div className="flex flex-row w-full">
-              <p><strong>30 more </strong>to explore</p>
-            </div>
+            <div className="flex mt-[0.865em] mx-[70px]">
+              <div className=" flex flex-row items-center justify-start w-full ">
+                <RightArrowSVG/>
+                <span className="pl-2" >Explore More</span>
+              </div>
+              <div className="flex items-center flex-row w-full">
+                <p><strong>30 more </strong>to explore</p>
+              </div>
             </div>
             
 
           </section>
         </article >
-        {/* py-[80em] */}
-        <article className=" text-black h-full colorme">
+        <article className="relative text-black h-full colorme">
           <div className="mygrad"></div>
-          <section className="colorme h-full">
-            <h2>
-              how it worked for jason &nbsp;
+          <Qoute/>
+          <div className="flex flex-col mx-[70px] py-[15.438em] lg:flex-row  lg:justify-between">
+          <section className="colorme h-full lg:w-[34%]">
+            <h2 className="lg:text-[3.375rem] text-3xl text-white font-[700]">
+              How it worked for jason &nbsp;
               <img
                 src={"/assets/json/jason.png"}
                 alt={"jason"}
-                className="rounded-full"
+                className="rounded-full inline"
+                width={57}
+                height={57}
               />
-              &nbsp;at
-              <span>
-                <RenderGroove />
+              &nbsp;at&nbsp;
+              <span className="pt-4 px-2 inline-block">
+                <RenderGroove width={"192"} height={"51"} fill={"#AF7CFF"}/>
               </span>
             </h2>
-            <p>
+            <p className="text-white py-[2.25em] lg:text-[1.375rem] text-[0.875rem] leading-[32px] opacity-80">
               Zwilt enabled us to deliver on time and they’ve been heavy hitters
               in our corner since.
             </p>
 
-            <div>
-              <span>
+            <div className="flex">
+              <span className="">
                 <svg
                   width="50"
                   height="50"
@@ -166,7 +170,7 @@ function App() {
                   />
                 </svg>
               </span>
-              <span>
+              <span className="px-2">
                 <svg
                   width="51"
                   height="50"
@@ -193,24 +197,27 @@ function App() {
               </span>
             </div>
           </section>
-          <section>
-            <figure className="">
-              <span>
-                <RenderGroove />
-              </span>
-              <figcaption>
-                <h3>Jason Makki</h3>
-                <p>Engineer at GROOVE</p>
-                <p>San Francisco</p>
+          <section className="pt-[4em] lg:pt-0 lg:w-[50%] self-end pr-32">
+            <figure className="flex items-center ">
+              <div className="flex justify-center items-center bg-[#AF7CFF] w-[99px] h-[99px] rounded-full">
+                <RenderGroove width={"76"} height={"20.87"} fill={"#FFF"}/>
+              </div>
+              <figcaption className="flex flex-col justify-center items-start px-[1em] ">
+                <h3 className="text-white lg:text-[1.375rem]">Jason Makki</h3>
+                <p className=" text-[0.875rem] text-gray-600">Engineer at GROOVE</p>
+                <p className="text-[0.875rem] text-gray-600">San Francisco</p>
               </figcaption>
-              <p>
+            </figure>
+
+              <p className="text-white font-[400] pt-[2em] leading-[32px] lg:text-[1.375rem] text-[0.875rem] item-end opacity-80">
                 Zwilt enabled us to deliver on time and they’ve been heavy
                 hitters in our corner since. Zwilt enabled us to deliver on time
                 and they’ve been heavy hitters in our corner since.Zwilt enabled
                 us to deliver on time and they’ve been heavy hitters.
               </p>
-            </figure>
           </section>
+          </div>
+          
         </article>
 
         <article>
