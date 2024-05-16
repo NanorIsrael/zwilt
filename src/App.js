@@ -12,12 +12,12 @@ function App() {
     <>
       {/* <Header /> */}
       <header className="container-bg text-white bg-[#525AA0] rounded-[15px]">
-      <section className="flex flex-col items-center justify-around md:justify-between md:bg-black lg:flex-row lg:bg-red-500">
-        <div className="cursor-pointer lg:pl-[4.865em]">
+      <section className="py-[2.865em] flex flex-col items-center justify-around md:justify-between md:bg-black lg:flex-row lg:bg-red-500">
+        <div className="cursor-pointer lg:pl-[4.865em] ">
           <Logo />
         </div>
         <nav className="flex w-[33%] items-center font-[500] cursor-pointer">
-          <ul className=" capitalize flex flex-row justify-between text-[0.875rem] w-full">
+          <ul className="capitalize flex text-[0.875rem] w-full flex-col items-center md:flex-row md:justify-between">
             <li className="py-[1.375em]">find work</li>
             <li className="py-[1.375em]">find talent</li>
             <li className="py-[1.375em]">articles</li>
@@ -25,13 +25,14 @@ function App() {
             <li className="py-[1.375em]">contact us</li>
           </ul>
         </nav>
-        {/* pl-[15.875em] */}
-        <div className="flex h-[100%] w-[13%] justify-around font-[500] text-[0.875rem]">
-          <button className="capitalize">login</button>
-          <button className="bg-white rounded-[16px] text-black h-full capitalize py-2 px-4">join now</button>
+         {/* pl-[15.875em]  */}
+        <div className="flex flex-col h-full w-[50%] md:w-[13%] justify-around font-[500] text-[0.875rem] md:flex-row">
+          <button className="capitalize py-2">login</button>
+          <button className="bg-white rounded-[16px] text-black h-full capitalize py-2 w-full md:px-4">join now</button>
         </div>
       </section>
-    </header>
+    </header> 
+
       <main className=" text-black h-full flex flex-col w-[100%] my-0 mx-auto justify-center">
         <article className="text-center pt-[9em]">
           <h1 className="text-[3.375rem] font-[700] leadingd-[64px] w-[47%] bg-white my-0 mx-auto">
