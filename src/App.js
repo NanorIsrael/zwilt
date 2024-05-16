@@ -1,41 +1,23 @@
 import Header from "./components/Header/Header";
-import Marketplace from "./components/section2/Marketplace";
-import RenderGroove from "./components/page3/GrooveSVG";
-import ScreeningProcess from "./components/page4/ScreeningProcess";
+import RenderGroove from "./components/section3/GrooveSVG";
+import ScreeningProcess from "./components/section4/ScreeningProcess";
 import RightArrowSVG from "./components/page5/RightArrowSVG";
 import Logo from "./components/Logo";
+
 import "./App.css";
+import SearchButton from "./components/section1/SearchButton";
+import MarketParent from "./components/section2/MarketParent";
+import LinesSVG from "./components/section2/LineSVG";
 
 function App() {
-  // pl-[18.25em]
   return (
     <>
-      {/* <Header /> */}
-      <header className="container-bg text-white bg-[#525AA0] rounded-[15px]">
-      <section className="py-[2.865em] flex flex-col items-center justify-around md:justify-between md:bg-black lg:flex-row lg:bg-red-500">
-        <div className="cursor-pointer lg:pl-[4.865em] ">
-          <Logo />
-        </div>
-        <nav className="flex w-[33%] items-center font-[500] cursor-pointer">
-          <ul className="capitalize flex text-[0.875rem] w-full flex-col items-center md:flex-row md:justify-between">
-            <li className="py-[1.375em]">find work</li>
-            <li className="py-[1.375em]">find talent</li>
-            <li className="py-[1.375em]">articles</li>
-            <li className="py-[1.375em]">about us</li>
-            <li className="py-[1.375em]">contact us</li>
-          </ul>
-        </nav>
-         {/* pl-[15.875em]  */}
-        <div className="flex flex-col h-full w-[50%] md:w-[13%] justify-around font-[500] text-[0.875rem] md:flex-row">
-          <button className="capitalize py-2">login</button>
-          <button className="bg-white rounded-[16px] text-black h-full capitalize py-2 w-full md:px-4">join now</button>
-        </div>
-      </section>
-    </header> 
+      <Header />
+  
 
-      <main className=" text-black h-full flex flex-col w-[100%] my-0 mx-auto justify-center">
+      <main className=" text-black h-full w-full flex flex-col my-0 mx-auto justify-center">
         <article className="text-center pt-[9em]">
-          <h1 className="text-[3.375rem] font-[700] leadingd-[64px] w-[47%] bg-white my-0 mx-auto">
+          <h1 className="text-3xl md:text-[3.375rem] font-[700] leading-[64px] w-full md:w-[47%] bg-white my-0 mx-auto">
             Finding the right fit &nbsp;
             <img
               src={"/assets/hero/fit.gif"}
@@ -46,13 +28,13 @@ function App() {
             />
             &nbsp;has never been easier.
           </h1>
-          <p className="font-[400] text-[1.375rem] leading-[32px] pt-[0.188em] w-[40.42%] mx-auto text-[#202229]">
-            With our rigorous pre-vetting process, you'll never have to worry
+          <p className="font-[400] text-[0.875rem] md:text-[1.375rem] leading-[32px] pt-[0.188em] md:w-[40.42%] mx-auto text-[#202229]">
+            With our rigorous <span className="truncate">pre-vetting</span> process, you'll never have to worry
             about finding the ideal candidate ever again.
           </p>
           <label
             htmlFor="search-hero"
-            className="rounded-[15px] flex justify-center w-[40%] h-[4.625em] border-[1.5px] border-gray-200 my-[1.875em] mx-auto"
+            className="rounded-[15px] flex justify-center md:w-[40%] h-[4.625em] border-[1.5px] border-gray-200 my-[1.875em] mx-auto"
           >
             <input
               id="search-hero"
@@ -64,26 +46,10 @@ function App() {
               type={"submit"}
               className="bg-[#FFBE2E] rounded-[15px] w-[4.625em] h-full"
             >
-              <svg
-                className={"my-0 m-auto"}
-                width="25"
-                height="15"
-                viewBox="0 0 25 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.3588 7.5C13.3588 11.036 10.3683 13.9024 6.67939 13.9024C2.99046 13.9024 -2.2912e-08 11.036 -1.55709e-08 7.5C-8.22979e-09 3.96403 2.99046 1.09756 6.67939 1.09756C10.3683 1.09756 13.3588 3.96403 13.3588 7.5Z"
-                  fill="#202229"
-                />
-                <path
-                  d="M11.6412 15L11.6412 2.41685e-08L25 7.5L11.6412 15Z"
-                  fill="#202229"
-                />
-              </svg>
+              <SearchButton/>
             </button>
           </label>
-          <section className="bg-[#F8F8F8] flex flex-col justify-center items-center w-[63.88%] my-0 mx-auto rounded-[15px]">
+          <section className="bg-[#F8F8F8] flex flex-col justify-center items-center md:w-[63.88%] my-0 mx-auto rounded-[15px]">
             <div className="flex flex-row w-[24.438em] h-[2.75em] my-[0.938em]">
               <button className="w-full h-full bg-[#C7F4C2] rounded-[15px] font-[600] text-[1rem] leading-[23.78px]">
                 IT & Development
@@ -92,7 +58,7 @@ function App() {
                 Design and Creative
               </button>
             </div>
-            <div className="flex py-[1.438em]">
+            <div className="flex flex-col py-[1.438em] md:flex-row md:px-4 md:justify-between md:w-full">
               <ul className="text-[1rem] capitalize font-normal leading-[16px] text-[#959595] text-start">
                 <li className="">python developer</li>
                 <li className="pt-[1.125em]">shopify developer</li>
@@ -103,7 +69,7 @@ function App() {
                 </li>
                 <li className="pt-[1.125em]">full stack developer</li>
               </ul>
-              <ul className="text-[1rem] capitalize font-normal leading-[16px] text-[#959595] text-start px-[10.438em]">
+              <ul className="text-[1rem] capitalize font-normal leading-[16px] text-[#959595] text-start py-8  md:py-0">
                 <li className="">data scientist</li>
                 <li className="pt-[1.125em]">frontend developer</li>
                 <li className="pt-[1.125em]">shopify developer</li>
@@ -121,63 +87,24 @@ function App() {
           </section>
         </article>
         <article className="relative w-[100%]">
-          <svg
-            className={
-              "bg-white absolute top-[0] left-0 w-full rotate-[0deg] z-100 mt-[78px]"
-            }
-            width="w-full"
-            height="133"
-            viewBox="0 0 1440 133"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M1459.75 13.9955L-8.74981 66.4955L-9.25 52.5044L1459.25 0.00439453L1459.75 13.9955ZM1461.2 30.4964L-7.3034 82.9964L-7.69641 72.0034L1460.8 19.5034L1461.2 30.4964ZM-6.85699 99.4974L1461.64 46.9974L1461.36 39.0025L-7.14282 91.5025L-6.85699 99.4974ZM1461.59 63.4983L-6.91058 115.998L-7.08922 111.002L1461.41 58.5015L1461.59 63.4983ZM-6.94631 132.999L1461.55 80.499L1461.45 77.5009L-7.0535 130.001L-6.94631 132.999Z"
-              fill="url(#paint0_diamond_1_703)"
-            />
-            <defs>
-              <radialGradient
-                id="paint0_diamond_1_703"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(754 133) rotate(176.812) scale(773.197 8551.4)"
-              >
-                <stop stop-color="#525AA0" />
-                <stop offset="1" stop-color="#A285D0" stop-opacity="0" />
-              </radialGradient>
-            </defs>
-          </svg>
+          <LinesSVG/>
           <div className="w-full h-[40px] clipper-a z-10 bg-white"></div>
           <section className="w-full z-0 overflow-hidden gradient-a">
-            <h2 className="w-[67.847%] text-center font-[700] text-[3.375rem] leading-[64px] mt-[8.313em] mx-auto pt-4">
+            <h2 className="md:w-[67.847%] text-center font-[700] text-3xl md:text-[3.375rem] leading-[4rem] mt-[8.313em] mx-auto">
               Your one-stop marketplace for finding the talent your business
               needs.
             </h2>
-            <div className="flex justify-center w-[100%]">
-              <section className="flex flex-col">
-                <Marketplace />
-                <Marketplace />
-              </section>
-
-              <section className="pt-[3.405em]">
-                <figure className="pt-[2.25em]">
-                  <img
-                    src={"/assets/services/it&development.png"}
-                    alt="it and development"
-                  />
-                </figure>
-                <figure className="py-[2.25em]">
-                  <img
-                    src={"/assets/services/design&creative.png"}
-                    alt="design and creative"
-                    className=""
-                  />
-                </figure>
-              </section>
+            <div className="flex items-center flex-col mx-[70px]">
+              <MarketParent 
+              description={"Find Dev and IT professionals to scale your business."}
+              image={"/assets/services/design&creative.png"}
+              imageAlt={"design and creative"}
+              />
+              <MarketParent 
+              description={"Explore Creative individuals with a keen eye for detail."}
+              image={"/assets/services/it&development.png"}
+              imageAlt={"design and creative"}
+              />
             </div>
           </section>
         </article>

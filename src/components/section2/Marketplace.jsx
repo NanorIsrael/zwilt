@@ -1,8 +1,8 @@
-function Marketplace() {
+function Marketplace({title}) {
   return (
-    <section className="pt-[5.625em] bg-yellow-400">
+    <section className="w-full lg:self-center">
       <p className="w-[67.847%] leading-[34px] font-[#202229] text-[1.5rem] pt-[2.25em]">
-        Find Dev and IT professionals to scale your business.
+        {title}
       </p>
       <div className="flex justify-beteen w-full pr-[11.875em]">
         <div className="flex flex-row w-full">
