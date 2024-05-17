@@ -20,7 +20,7 @@ function App() {
       <Header />
 
       <main className=" text-black h-full w-full flex flex-col my-0 mx-auto justify-center">
-        <article className="text-center pt-[9em] pb-[9em]">
+        <article id="find-work" className="text-center pt-[9em] pb-[9em]">
           <h1 className="text-3xl md:text-[3.375rem] font-[700] leading-[64px] w-full md:w-[47%] bg-white my-0 mx-auto">
             Finding the right fit &nbsp;
             <img
@@ -91,7 +91,7 @@ function App() {
             </div>
           </section>
         </article>
-        <article className="relative w-[100%] bg-[#EDEFFF]">
+        <article id="find-talent" className="relative w-[100%] bg-[#EDEFFF]">
           <div className="clipper-a"></div>
           <LinesSVG />
           <section className="w-full z-0  ">
@@ -131,7 +131,7 @@ function App() {
         <article className="relative text-black h-full colorme">
           <div className="mygrad"></div>
           <Qoute />
-          <div className="flex flex-col mx-[70px] py-[15.438em] lg:flex-row  lg:justify-between">
+          <div id="articles" className="flex flex-col mx-[70px] py-[15.438em] lg:flex-row  lg:justify-between">
             <section className="colorme h-full lg:w-[34%]">
               <h2 className="lg:text-[3.375rem] text-3xl text-white font-[700] leading-[64px]">
                 How it worked for jason &nbsp;
@@ -204,7 +204,7 @@ function App() {
           </div>
         </article>
 
-        <article className="flex flex-col md:mx-[70px] py-[15.438em]">
+        <article id="about-us" className="flex flex-col md:mx-[70px] py-[15.438em]">
           <h2 className="lg:text-[3.375rem] text-3xl text-black font-[700] leading-[64px] text-center">
             Start your journey today.
           </h2>

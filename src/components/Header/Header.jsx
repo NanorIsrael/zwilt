@@ -23,11 +23,11 @@ function Header() {
           className={`${!open ? "hidden" : "flex"} w-full items-center font-[500] cursor-pointer lg:flex lg:w-[37%]`}
         >
           <ul className="capitalize flex text-[0.875rem] w-full flex-col items-center lg:flex-row lg:justify-between">
-            <li className="py-[1.375em]">find work</li>
-            <li className="py-[1.375em">find talent</li>
-            <li className="py-[1.375em]">articles</li>
-            <li className="py-[1.375em]">about us</li>
-            <li className="py-[1.375em]">contact us</li>
+            <li className="py-[1.375em]"><a href={"#find-work"}>find work</a></li>
+            <li className="py-[1.375em"><a href={"#find-talent"}>find talent</a></li>
+            <li className="py-[1.375em]"><a href={"#articles"}>articles</a></li>
+            <li className="py-[1.375em]"><a href={"#about-us"}>about us</a></li>
+            <li className="py-[1.375em]"><a href={"#contact-us"}>contact us</a></li>
           </ul>
         </nav>
         <div
