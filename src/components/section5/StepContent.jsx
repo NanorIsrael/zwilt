@@ -1,7 +1,6 @@
 import RightArrowSVG from "./RightArrowSVG";
 
 function StepContent({ Number, title, description, paddingTop }) {
-  console.log(paddingTop);
   return (
     <div className={`flex px-4 ${paddingTop} pb-[8em] lg:py-24`}>
       <span className="p-4">

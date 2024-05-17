@@ -85,3 +85,56 @@ summary::marker {
   border: none;
 
 }
+
+.alice-polygon {
+  clip-path: polygon(0% 10%, 100% 2%, 100% 100%, 0% 100%);
+}
+
+@media screen and (min-width: 773px) {
+  .alice-polygon {
+    clip-path: polygon(0% 12%, 100% 8%, 100% 100%, 0% 100%);
+  }
+}
+@media screen and (min-width: 845px) {
+  .alice-polygon {
+    clip-path: polygon(0% 12%, 100% 9%, 100% 100%, 0% 100%);
+  
+  }
+}
+@media screen and (min-width: 1040px) {
+  .alice-polygon {
+    clip-path: polygon(0% 13%, 100% 8%, 100% 100%, 0% 100%);
+  
+  }
+}
+@media screen and (min-width: 1440px) {
+  .alice-polygon {
+    clip-path: polygon(0% 12%, 100% 8%, 100% 100%, 0% 100%);
+  
+  }
+}
+
+
+
+.p-polygon {
+  clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media screen and (min-width: 835px) {
+  .p-polygon {
+    clip-path: polygon(0% 2%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+}
+@media screen and (min-width: 1040px) {
+  .alice-polygon {
+    clip-path: polygon(0% 13%, 100% 8%, 100% 100%, 0% 100%);
+  
+  }
+}
+@media screen and (min-width: 1440px) {
+  .alice-polygon {
+    clip-path: polygon(0% 12%, 100% 8%, 100% 100%, 0% 100%);
+  
+  }
+}

@@ -1,4 +1,3 @@
-import RightArrowSVG from "./RightArrowSVG";
 import StepContent from "./StepContent";
 
 function Step2() {
@@ -74,8 +73,8 @@ function Step2() {
                 y2="100"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#FFBE2E" stop-opacity="0.76" />
-                <stop offset="1" stop-color="#FFBE2E" stop-opacity="0" />
+                <stop stopColor="#FFBE2E" stopOpacity="0.76" />
+                <stop offset="1" stopColor="#FFBE2E" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>

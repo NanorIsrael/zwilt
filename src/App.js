@@ -204,7 +204,7 @@ function App() {
           </div>
         </article>
 
-        <article className="flex flex-col mx-[70px] py-[15.438em]">
+        <article className="flex flex-col md:mx-[70px] py-[15.438em]">
           <h2 className="lg:text-[3.375rem] text-3xl text-black font-[700] leading-[64px] text-center">
             Start your journey today.
           </h2>
