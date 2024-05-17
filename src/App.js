@@ -13,6 +13,7 @@ import SliderButtons from "./components/section3/SliderButtons";
 import RenderBulletSVG from "./components/section4/BulletSVG";
 import Step1 from "./components/section5/Step1";
 import Step2 from "./components/section5/Step2";
+import Step3 from "./components/section5/Step3";
 
 function App() {
   return (
@@ -209,20 +210,27 @@ function App() {
             Start your journey today.
           </h2>
           <div className="p-8">
-            <section className="relative bg-[#EDEFFF] overflow-hidden">
+            {/* <section className="relative bg-[#EDEFFF] overflow-hidden">
               <div className="mygrad bg-white relative z-100"></div>
 
               <Step1 />
 
               <div className="clip-b bg-white"></div>
-            </section>
-            <section className="relative bg-[#FFF7E1] overflow-hidden">
+            </section> */}
+            {/* <section className="relative bg-[#FFF7E1] overflow-hidden">
               <div className="mygrad bg-white relative z-100"></div>
 
               <Step2 />
 
               <div className="clip-b bg-white"></div>
             </section>
+            <section className="relative bg-[#F3F3F3] overflow-hidden">
+              <div className="mygrad bg-white relative z-100"></div>
+
+              <Step3 />
+
+              <div className="clip-b bg-white"></div>
+            </section> */}
           </div>
         </article>
 
