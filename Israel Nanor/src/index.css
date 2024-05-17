@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 16px;
+    font-family: 'switzer';
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+header, footer {
+  position: sticky;
+  top: 36px;
+}
+
+header {
+ /* margin-top: 36px; */
+ z-index: 1000;
+}
+.container-bg {
+  /* width: 100%; */
+  margin: 0 70px 0 70px;
+}
+
+.clipper-a {
+  background-color:  #FFF;
+  clip-path: polygon(0% 70%, 100% 0%, 0% 0%);
+  height: 80px
+}
+@media screen and (max-width: 800px) {
+  .clipper-a {
+    clip-path: polygon(0% 70%, 100% 0%, 0% 0%);
+    height: 50px
+  }
+}
+/* .clipper-a:after {
+  content: "";
+  position: absolute;
+  top: 17%;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to bottom right,#FFF, hsla(233, 100%, 96%, 0.485));
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-3deg);
+} */
+
+
+#search-hero::placeholder {
+  content: "Looking for";
+  font-weight: bold;
+  color:black
+}
+
+.mygrad {
+  background-color:  #EDEFFF;
+  clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+  height: 70px;
+  border: none;
+}
+.colorme {
+  background-color: #202229;
+}
+
+summary::marker {
+  content: "";
+}
+
+.mygrad {
+  background-color:  #EDEFFF;
+  clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+  height: 70px;
+  border: none;
+}
+.clip-b{
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+  background-color:  #EDEFFF;
+  height: 70px;
+  border: none;
+
+}
+
+.alice-polygon {
+  clip-path: polygon(0% 10%, 100% 2%, 100% 100%, 0% 100%);
+}
+
+@media screen and (min-width: 773px) {
+  .alice-polygon {
+    clip-path: polygon(0% 12%, 100% 8%, 100% 100%, 0% 100%);
+  }
+}
+@media screen and (min-width: 845px) {
+  .alice-polygon {
+    clip-path: polygon(0% 12%, 100% 9%, 100% 100%, 0% 100%);
+  
+  }
+}
+@media screen and (min-width: 1040px) {
+  .alice-polygon {
+    clip-path: polygon(0% 13%, 100% 8%, 100% 100%, 0% 100%);
+  
+  }
+}
+@media screen and (min-width: 1440px) {
+  .alice-polygon {
+    clip-path: polygon(0% 12%, 100% 8%, 100% 100%, 0% 100%);
+  
+  }
+}
+
+
+
+.p-polygon {
+  clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media screen and (min-width: 835px) {
+  .p-polygon {
+    clip-path: polygon(0% 2%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+}
+@media screen and (min-width: 1040px) {
+  .alice-polygon {
+    clip-path: polygon(0% 13%, 100% 8%, 100% 100%, 0% 100%);
+  
+  }
+}
+@media screen and (min-width: 1440px) {
+  .alice-polygon {
+    clip-path: polygon(0% 12%, 100% 8%, 100% 100%, 0% 100%);
+  
+  }
+}
