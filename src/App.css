@@ -1136,6 +1136,11 @@ code {
   background-color: ##FFF;
 }
 
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-\[15\%\] {
   --tw-bg-opacity: 15%;
 }

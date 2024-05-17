@@ -131,7 +131,10 @@ function App() {
         <article className="relative text-black h-full colorme">
           <div className="mygrad"></div>
           <Qoute />
-          <div id="articles" className="flex flex-col mx-[70px] py-[15.438em] lg:flex-row  lg:justify-between">
+          <div
+            id="articles"
+            className="flex flex-col mx-[70px] py-[15.438em] lg:flex-row  lg:justify-between"
+          >
             <section className="colorme h-full lg:w-[34%]">
               <h2 className="lg:text-[3.375rem] text-3xl text-white font-[700] leading-[64px]">
                 How it worked for jason &nbsp;
@@ -204,7 +207,10 @@ function App() {
           </div>
         </article>
 
-        <article id="about-us" className="flex flex-col md:mx-[70px] py-[15.438em]">
+        <article
+          id="about-us"
+          className="flex flex-col md:mx-[70px] py-[15.438em]"
+        >
           <h2 className="lg:text-[3.375rem] text-3xl text-black font-[700] leading-[64px] text-center">
             Start your journey today.
           </h2>

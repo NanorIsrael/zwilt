@@ -11,7 +11,7 @@ function ScreeningProcess({ step, description }) {
     >
       <summary className="flex items-center">
         <span className="p-2">
-          <RenderBulletSVG />
+          <RenderBulletSVG isSelected={isSelected}/>
         </span>
         <p className="leading-[17.83px]">
           <span className="font-[600] px-2">Step {step}:</span>
