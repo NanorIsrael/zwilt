@@ -1,7 +1,7 @@
 import Header from "./components/Header/Header";
 import RenderGroove from "./components/section3/GrooveSVG";
 import ScreeningProcess from "./components/section4/ScreeningProcess";
-import RightArrowSVG from "./components/page5/RightArrowSVG";
+import RightArrowSVG from "./components/section5/RightArrowSVG";
 import Logo from "./components/Logo";
 
 import "./App.css";
@@ -11,6 +11,8 @@ import LinesSVG from "./components/section2/LineSVG";
 import Qoute from "./components/section3/QuoteSVG";
 import SliderButtons from "./components/section3/SliderButtons";
 import RenderBulletSVG from "./components/section4/BulletSVG";
+import Step1 from "./components/section5/Step1";
+import Step2 from "./components/section5/Step2";
 
 function App() {
   return (
@@ -181,42 +183,46 @@ function App() {
         <article className="relative">
           <div className="mygrad bg-[#202229]"></div>
 
-          <div className="flex flex-col mx-[70px] py-[15.438em] lg:w-[50%]">
-          <section >
-            <h2 className="lg:text-[3.375rem] text-3xl text-black font-[700] leading-[64px]">How we ensure you’re in good hands.</h2>
-            <p className="font-[400] lg:pt-[2em] leading-[32px] lg:text-[1.375rem] text-[0.875rem]">
-              With our comprehensive screening process, we hand-pick highly
-              skilled candidates so you can onboard them in a matter of days.
-            </p>
-          </section>
-          <section className="py-8">
-            <ScreeningProcess step={1} description={"Resume Screening"}/>
-            <ScreeningProcess step={2} description={"Video Interview"}/>
-            <ScreeningProcess step={3} description={"Technical Evaluation"}/>
-            <ScreeningProcess step={4} description={"Application Review"}/>
-            <ScreeningProcess step={5} description={"Lets get to work"}/>
-          </section>
+          <div className="flex flex-col mx-[70px] pt-[15.438em] lg:w-[50%]">
+            <section className="">
+              <h2 className="lg:text-[3.375rem] text-3xl text-black font-[700] leading-[64px]">
+                How we ensure you’re in good hands.
+              </h2>
+              <p className="font-[400] lg:pt-[2em] leading-[32px] lg:text-[1.375rem] text-[0.875rem]">
+                With our comprehensive screening process, we hand-pick highly
+                skilled candidates so you can onboard them in a matter of days.
+              </p>
+            </section>
+
+            <section className="py-8">
+              <ScreeningProcess step={1} description={"Resume Screening"} />
+              <ScreeningProcess step={2} description={"Video Interview"} />
+              <ScreeningProcess step={3} description={"Technical Evaluation"} />
+              <ScreeningProcess step={4} description={"Application Review"} />
+              <ScreeningProcess step={5} description={"Lets get to work"} />
+            </section>
           </div>
-        
         </article>
 
-        <article>
-          <h2>Start your journey today.</h2>
-          <div>
-            <section>
-              <h3>Find your next star performer.</h3>
-              <p>
-                Explore the vast Zwilt marketplace to find the candidate that
-                meets your needs.
-              </p>
-              <div>
-                <span>
-                  <RightArrowSVG />
-                </span>
-                <span>Join Now</span>
-              </div>
+        <article className="flex flex-col mx-[70px] py-[15.438em]">
+          <h2 className="lg:text-[3.375rem] text-3xl text-black font-[700] leading-[64px] text-center">
+            Start your journey today.
+          </h2>
+          <div className="p-8">
+            <section className="relative bg-[#EDEFFF] overflow-hidden">
+              <div className="mygrad bg-white relative z-100"></div>
+
+              <Step1 />
+
+              <div className="clip-b bg-white"></div>
             </section>
-            <section></section>
+            <section className="relative bg-[#FFF7E1] overflow-hidden">
+              <div className="mygrad bg-white relative z-100"></div>
+
+              <Step2 />
+
+              <div className="clip-b bg-white"></div>
+            </section>
           </div>
         </article>
 

@@ -72,4 +72,16 @@ summary::marker {
   content: "";
 }
 
+.mygrad {
+  background-color:  #EDEFFF;
+  clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+  height: 70px;
+  border: none;
+}
+.clip-b{
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+  background-color:  #EDEFFF;
+  height: 70px;
+  border: none;
 
+}
