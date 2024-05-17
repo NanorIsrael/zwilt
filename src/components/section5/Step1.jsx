@@ -71,9 +71,11 @@ function Step1() {
         </figure>
       </section>
       <StepContent
-      	  	paddingTop={"pt-[11em]"}
+        paddingTop={"pt-[11em]"}
         title={"Find your next star performer."}
-        description={"Explore the vast Zwilt marketplace to find the candidate that meets your needs."}
+        description={
+          "Explore the vast Zwilt marketplace to find the candidate that meets your needs."
+        }
         Number={() => (
           <svg
             width="52"

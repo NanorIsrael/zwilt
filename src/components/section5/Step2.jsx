@@ -5,38 +5,35 @@ function Step2() {
   return (
     <div className="flex flex-col lg:flex-row-reverse lg:justify-between">
       <section className="lg:w-[50%]">
-        {/* <figure
-          className="rounded-[20px] absolute top-[10%] right-[10%] lg:right-[30%] "
-		  >
+        <figure className="rounded-[20px] absolute top-[10%] right-[10%] lg:right-[30%] ">
           <img
             src={"/assets/step2/image1.png"}
             alt={"jason"}
             className="rounded-[21.15px] bg-[#FFF] w-full p-8"
           />
-        </figure> */}
-        {/* <figure
-          className="rounded-[20px] bg-[url('/assets/step2/background.png')] absolute top-[-1%] lg:top-[-4%] right-[4%]"
-		  >
+        </figure>
+        <figure className="rounded-[20px] absolute top-[-1%] lg:top-[-4%] right-[4%]">
           <img
             src={"/assets/step2/image2.png"}
             alt={"jason"}
             className="rounded-[21.15px] bg-[#FFF] w-full p-8"
           />
         </figure>
-        <figure
-          className="rounded-[20px] bg-[url('/assets/step2/background.png')] absolute bottom-[0%] lg:bottom-[-4%] right-[4%]"
-		  >
+
+        <figure className="rounded-[20px] absolute bottom-[0%] lg:bottom-[-4%] right-[4%]">
           <img
             src={"/assets/step2/image3.png"}
             alt={"jason"}
             className="rounded-[21.15px] bg-[#FFF] w-full p-8"
           />
-        </figure> */}
+        </figure>
       </section>
       <StepContent
-	  	paddingTop={"pt-[30em]"}
+        paddingTop={"pt-[30em]"}
         title={"Evaluate to your heart’s content."}
-        description={"Assess the candidate through work history, transparent tests and video interviews."}
+        description={
+          "Assess the candidate through work history, transparent tests and video interviews."
+        }
         Number={() => (
           <svg
             width="51"
