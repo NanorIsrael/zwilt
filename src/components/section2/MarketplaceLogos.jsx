@@ -1,4 +1,4 @@
-function MarketplaceLogos({ image, imageAlt }) {
+function MarketPlaceLogos({ image, imageAlt }) {
   return (
     <>
       <figure className="pt-[2.25em] w-full">
@@ -7,4 +7,4 @@ function MarketplaceLogos({ image, imageAlt }) {
     </>
   );
 }
-export default MarketplaceLogos;
+export default MarketPlaceLogos;
