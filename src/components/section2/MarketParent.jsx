@@ -1,4 +1,4 @@
-import MarketPlace from "./MarketPlace";
+import MarketPlace from "./Marketplace";
 import MarketPlaceLogos from "./MarketPlaceLogos";
 
 function MarketParent({ description, image, imageAlt }) {
