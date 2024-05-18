@@ -1,12 +1,12 @@
-import Marketplace from "./MarketPlace";
-import MarketplaceLogos from "./MarketPlaceLogos";
+import MarketPlace from "./MarketPlace";
+import MarketPlaceLogos from "./MarketPlaceLogos";
 
 function MarketParent({ description, image, imageAlt }) {
   return (
     <>
       <section className="flex flex-col pt-[2.25em] lg:flex-row">
-        <Marketplace title={description} />
-        <MarketplaceLogos image={image} imageAlt={imageAlt} />
+        <MarketPlace title={description} />
+        <MarketPlaceLogos image={image} imageAlt={imageAlt} />
       </section>
     </>
   );
