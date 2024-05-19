@@ -239,7 +239,7 @@ function App() {
           </div>
         </article>
 
-        <article>
+        {/* <article>
           <div>
             <p>Need a job done, and done well? Get started</p>
             <svg
@@ -299,7 +299,7 @@ function App() {
               </div>
             </div>
           </section>
-        </article>
+        </article> */}
       </main>
     </>
   );
