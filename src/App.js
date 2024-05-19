@@ -2,7 +2,6 @@ import Header from "./components/Header/Header";
 import RenderGroove from "./components/section3/GrooveSVG";
 import ScreeningProcess from "./components/section4/ScreeningProcess";
 import RightArrowSVG from "./components/section5/RightArrowSVG";
-import Logo from "./components/Logo";
 
 import "./App.css";
 import SearchButton from "./components/section1/SearchButton";
